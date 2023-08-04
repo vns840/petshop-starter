@@ -92,7 +92,6 @@ const pets =[
 export default function Pets(){
   const[petDetails,setPetDatails] = useState(pets[10])
   const [petIndex, setPetIndex] = useState(10)
-  console.log(petIndex)
 
   const getPetDatails = (id) =>{
     const pet = pets.find((pet) => {
@@ -105,7 +104,7 @@ export default function Pets(){
     <section className='bg-pets bg-center py-6 overflow-hidden'>
       <div className='flex flex-col lg:flex-row'>
         <div className='hidden xl:flex xl:w-[30%] xl:pl-[160px]'>
-          <Image src={Badge} alt="" width={230} height={227} />
+          <Image src={Badge} alt="logo" width={230} height={227} />
         </div>
         <div className='flex-1 flex flex-col lg:flex-row'>
           <div className='lg:w-[30%] flex flex-col justify-center items-end pb-6 lg:py-2 mx-auto lg:mx-0'>
